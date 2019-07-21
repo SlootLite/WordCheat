@@ -12,8 +12,6 @@ namespace WordCheat
         public static char[,] init(MainForm form)
         {
             char[,] charArray = new char[5, 5];
-            charArray[0, 0] = 'А';
-
             for(int i = 0; i < 5; i++)
             {
                 for(int j = 0; j < 5; j++)
