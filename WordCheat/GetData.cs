@@ -23,7 +23,6 @@ namespace WordCheat
                             if (c.Name == "charTB"+i+j)
                             {
                                 charArray[i, j] = Convert.ToChar(c.Text);
-                                form.sendResult(charArray[i, j].ToString());
                             }
                         }
                     }

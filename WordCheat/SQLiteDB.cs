@@ -12,11 +12,10 @@ namespace WordCheat
     class SQLiteDB
     {
         private static string dbFileName = "db.sqlite";
-        private static SQLiteConnection m_dbConn;
-        private static SQLiteCommand m_sqlCmd;
+        private static SQLiteConnection m_dbConn = new SQLiteConnection("Data Source=" + dbFileName + ";Version=3;");
+        private static SQLiteCommand m_sqlCmd = new SQLiteCommand();
         public static void Connect()
         {
-            m_dbConn = new SQLiteConnection("Data Source=" + dbFileName + ";Version=3;");
             m_dbConn.Open();
             m_sqlCmd.Connection = m_dbConn;
         }
