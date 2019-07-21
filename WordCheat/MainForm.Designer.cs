@@ -64,7 +64,7 @@
             // charTB00
             // 
             this.charTB00.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB00.Location = new System.Drawing.Point(19, 19);
+            this.charTB00.Location = new System.Drawing.Point(19, 30);
             this.charTB00.MaxLength = 1;
             this.charTB00.Name = "charTB00";
             this.charTB00.Size = new System.Drawing.Size(40, 29);
@@ -75,7 +75,7 @@
             // charTB01
             // 
             this.charTB01.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB01.Location = new System.Drawing.Point(65, 19);
+            this.charTB01.Location = new System.Drawing.Point(65, 30);
             this.charTB01.MaxLength = 1;
             this.charTB01.Name = "charTB01";
             this.charTB01.Size = new System.Drawing.Size(40, 29);
@@ -86,7 +86,7 @@
             // charTB02
             // 
             this.charTB02.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB02.Location = new System.Drawing.Point(111, 19);
+            this.charTB02.Location = new System.Drawing.Point(111, 30);
             this.charTB02.MaxLength = 1;
             this.charTB02.Name = "charTB02";
             this.charTB02.Size = new System.Drawing.Size(40, 29);
@@ -97,7 +97,7 @@
             // charTB03
             // 
             this.charTB03.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB03.Location = new System.Drawing.Point(157, 19);
+            this.charTB03.Location = new System.Drawing.Point(157, 30);
             this.charTB03.MaxLength = 1;
             this.charTB03.Name = "charTB03";
             this.charTB03.Size = new System.Drawing.Size(40, 29);
@@ -109,7 +109,7 @@
             // 
             this.charTB04.BackColor = System.Drawing.SystemColors.Window;
             this.charTB04.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB04.Location = new System.Drawing.Point(203, 19);
+            this.charTB04.Location = new System.Drawing.Point(203, 30);
             this.charTB04.MaxLength = 1;
             this.charTB04.Name = "charTB04";
             this.charTB04.Size = new System.Drawing.Size(40, 29);
@@ -120,7 +120,7 @@
             // charTB10
             // 
             this.charTB10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB10.Location = new System.Drawing.Point(19, 54);
+            this.charTB10.Location = new System.Drawing.Point(19, 65);
             this.charTB10.MaxLength = 1;
             this.charTB10.Name = "charTB10";
             this.charTB10.Size = new System.Drawing.Size(40, 29);
@@ -131,7 +131,7 @@
             // charTB11
             // 
             this.charTB11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB11.Location = new System.Drawing.Point(65, 54);
+            this.charTB11.Location = new System.Drawing.Point(65, 65);
             this.charTB11.MaxLength = 1;
             this.charTB11.Name = "charTB11";
             this.charTB11.Size = new System.Drawing.Size(40, 29);
@@ -142,7 +142,7 @@
             // charTB12
             // 
             this.charTB12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB12.Location = new System.Drawing.Point(111, 54);
+            this.charTB12.Location = new System.Drawing.Point(111, 65);
             this.charTB12.MaxLength = 1;
             this.charTB12.Name = "charTB12";
             this.charTB12.Size = new System.Drawing.Size(40, 29);
@@ -153,7 +153,7 @@
             // charTB13
             // 
             this.charTB13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB13.Location = new System.Drawing.Point(157, 54);
+            this.charTB13.Location = new System.Drawing.Point(157, 65);
             this.charTB13.MaxLength = 1;
             this.charTB13.Name = "charTB13";
             this.charTB13.Size = new System.Drawing.Size(40, 29);
@@ -164,7 +164,7 @@
             // charTB14
             // 
             this.charTB14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB14.Location = new System.Drawing.Point(203, 54);
+            this.charTB14.Location = new System.Drawing.Point(203, 65);
             this.charTB14.MaxLength = 1;
             this.charTB14.Name = "charTB14";
             this.charTB14.Size = new System.Drawing.Size(40, 29);
@@ -175,7 +175,7 @@
             // charTB20
             // 
             this.charTB20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB20.Location = new System.Drawing.Point(19, 88);
+            this.charTB20.Location = new System.Drawing.Point(19, 99);
             this.charTB20.MaxLength = 1;
             this.charTB20.Name = "charTB20";
             this.charTB20.Size = new System.Drawing.Size(40, 29);
@@ -186,7 +186,7 @@
             // charTB21
             // 
             this.charTB21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB21.Location = new System.Drawing.Point(65, 88);
+            this.charTB21.Location = new System.Drawing.Point(65, 99);
             this.charTB21.MaxLength = 1;
             this.charTB21.Name = "charTB21";
             this.charTB21.Size = new System.Drawing.Size(40, 29);
@@ -197,7 +197,7 @@
             // charTB22
             // 
             this.charTB22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB22.Location = new System.Drawing.Point(111, 88);
+            this.charTB22.Location = new System.Drawing.Point(111, 99);
             this.charTB22.MaxLength = 1;
             this.charTB22.Name = "charTB22";
             this.charTB22.Size = new System.Drawing.Size(40, 29);
@@ -208,7 +208,7 @@
             // charTB23
             // 
             this.charTB23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB23.Location = new System.Drawing.Point(157, 88);
+            this.charTB23.Location = new System.Drawing.Point(157, 99);
             this.charTB23.MaxLength = 1;
             this.charTB23.Name = "charTB23";
             this.charTB23.Size = new System.Drawing.Size(40, 29);
@@ -219,7 +219,7 @@
             // charTB24
             // 
             this.charTB24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB24.Location = new System.Drawing.Point(203, 88);
+            this.charTB24.Location = new System.Drawing.Point(203, 99);
             this.charTB24.MaxLength = 1;
             this.charTB24.Name = "charTB24";
             this.charTB24.Size = new System.Drawing.Size(40, 29);
@@ -230,7 +230,7 @@
             // charTB30
             // 
             this.charTB30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB30.Location = new System.Drawing.Point(19, 122);
+            this.charTB30.Location = new System.Drawing.Point(19, 133);
             this.charTB30.MaxLength = 1;
             this.charTB30.Name = "charTB30";
             this.charTB30.Size = new System.Drawing.Size(40, 29);
@@ -241,7 +241,7 @@
             // charTB31
             // 
             this.charTB31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB31.Location = new System.Drawing.Point(65, 122);
+            this.charTB31.Location = new System.Drawing.Point(65, 133);
             this.charTB31.MaxLength = 1;
             this.charTB31.Name = "charTB31";
             this.charTB31.Size = new System.Drawing.Size(40, 29);
@@ -252,7 +252,7 @@
             // charTB32
             // 
             this.charTB32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB32.Location = new System.Drawing.Point(111, 122);
+            this.charTB32.Location = new System.Drawing.Point(111, 133);
             this.charTB32.MaxLength = 1;
             this.charTB32.Name = "charTB32";
             this.charTB32.Size = new System.Drawing.Size(40, 29);
@@ -263,7 +263,7 @@
             // charTB33
             // 
             this.charTB33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB33.Location = new System.Drawing.Point(157, 122);
+            this.charTB33.Location = new System.Drawing.Point(157, 133);
             this.charTB33.MaxLength = 1;
             this.charTB33.Name = "charTB33";
             this.charTB33.Size = new System.Drawing.Size(40, 29);
@@ -274,7 +274,7 @@
             // charTB34
             // 
             this.charTB34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB34.Location = new System.Drawing.Point(203, 122);
+            this.charTB34.Location = new System.Drawing.Point(203, 133);
             this.charTB34.MaxLength = 1;
             this.charTB34.Name = "charTB34";
             this.charTB34.Size = new System.Drawing.Size(40, 29);
@@ -285,7 +285,7 @@
             // charTB40
             // 
             this.charTB40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB40.Location = new System.Drawing.Point(19, 157);
+            this.charTB40.Location = new System.Drawing.Point(19, 168);
             this.charTB40.MaxLength = 1;
             this.charTB40.Name = "charTB40";
             this.charTB40.Size = new System.Drawing.Size(40, 29);
@@ -296,7 +296,7 @@
             // charTB41
             // 
             this.charTB41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB41.Location = new System.Drawing.Point(65, 157);
+            this.charTB41.Location = new System.Drawing.Point(65, 168);
             this.charTB41.MaxLength = 1;
             this.charTB41.Name = "charTB41";
             this.charTB41.Size = new System.Drawing.Size(40, 29);
@@ -307,7 +307,7 @@
             // charTB42
             // 
             this.charTB42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB42.Location = new System.Drawing.Point(111, 157);
+            this.charTB42.Location = new System.Drawing.Point(111, 168);
             this.charTB42.MaxLength = 1;
             this.charTB42.Name = "charTB42";
             this.charTB42.Size = new System.Drawing.Size(40, 29);
@@ -318,7 +318,7 @@
             // charTB43
             // 
             this.charTB43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB43.Location = new System.Drawing.Point(157, 157);
+            this.charTB43.Location = new System.Drawing.Point(157, 168);
             this.charTB43.MaxLength = 1;
             this.charTB43.Name = "charTB43";
             this.charTB43.Size = new System.Drawing.Size(40, 29);
@@ -329,7 +329,7 @@
             // charTB44
             // 
             this.charTB44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.charTB44.Location = new System.Drawing.Point(203, 157);
+            this.charTB44.Location = new System.Drawing.Point(203, 168);
             this.charTB44.MaxLength = 1;
             this.charTB44.Name = "charTB44";
             this.charTB44.Size = new System.Drawing.Size(40, 29);
@@ -339,7 +339,7 @@
             // 
             // buttonGo
             // 
-            this.buttonGo.Location = new System.Drawing.Point(19, 199);
+            this.buttonGo.Location = new System.Drawing.Point(19, 210);
             this.buttonGo.Name = "buttonGo";
             this.buttonGo.Size = new System.Drawing.Size(75, 23);
             this.buttonGo.TabIndex = 25;
@@ -349,7 +349,7 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(111, 199);
+            this.progressBar.Location = new System.Drawing.Point(111, 210);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(132, 23);
             this.progressBar.TabIndex = 27;
@@ -362,12 +362,13 @@
             this.wordsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.key,
             this.value});
-            this.wordsGrid.Location = new System.Drawing.Point(271, 19);
+            this.wordsGrid.Location = new System.Drawing.Point(271, 30);
             this.wordsGrid.Name = "wordsGrid";
             this.wordsGrid.ReadOnly = true;
             this.wordsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.wordsGrid.Size = new System.Drawing.Size(681, 203);
             this.wordsGrid.TabIndex = 28;
+            this.wordsGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.wordsGrid_CellClick);
             // 
             // key
             // 
@@ -375,6 +376,7 @@
             this.key.HeaderText = "Путь";
             this.key.Name = "key";
             this.key.ReadOnly = true;
+            this.key.Visible = false;
             // 
             // value
             // 
@@ -382,7 +384,7 @@
             this.value.HeaderText = "Слово";
             this.value.Name = "value";
             this.value.ReadOnly = true;
-            this.value.Width = 500;
+            this.value.Width = 630;
             // 
             // MainForm
             // 
@@ -417,7 +419,10 @@
             this.Controls.Add(this.charTB02);
             this.Controls.Add(this.charTB01);
             this.Controls.Add(this.charTB00);
+            this.MaximumSize = new System.Drawing.Size(991, 283);
+            this.MinimumSize = new System.Drawing.Size(991, 283);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игра слово-в-слово чит";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).EndInit();

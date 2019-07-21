@@ -27,15 +27,30 @@ namespace WordCheat
 
         public static void ExecQuery(string sql)
         {
-            m_sqlCmd.CommandText = sql;
-            m_sqlCmd.ExecuteNonQuery();
+            try
+            {
+                m_sqlCmd.CommandText = sql;
+                m_sqlCmd.ExecuteNonQuery();
+            }
+            catch
+            {
+
+            }
         }
 
         public static DataTable Select(string sql)
         {
             DataTable dTable = new DataTable();
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(sql, m_dbConn);
-            adapter.Fill(dTable);
+            try
+            {
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(sql, m_dbConn);
+                adapter.Fill(dTable);
+            }
+            catch
+            {
+
+            }
+            
             return dTable;
         }
     }
