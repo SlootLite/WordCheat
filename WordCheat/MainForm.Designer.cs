@@ -58,7 +58,10 @@
             this.wordsGrid = new System.Windows.Forms.DataGridView();
             this.key = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.addWordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // charTB00
@@ -386,6 +389,23 @@
             this.value.ReadOnly = true;
             this.value.Width = 630;
             // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addWordsToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(975, 24);
+            this.menuStrip.TabIndex = 29;
+            this.menuStrip.Text = "menuStrip";
+            // 
+            // addWordsToolStripMenuItem
+            // 
+            this.addWordsToolStripMenuItem.Name = "addWordsToolStripMenuItem";
+            this.addWordsToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.addWordsToolStripMenuItem.Text = "Добавить слова";
+            this.addWordsToolStripMenuItem.Click += new System.EventHandler(this.addWordsToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,6 +439,9 @@
             this.Controls.Add(this.charTB02);
             this.Controls.Add(this.charTB01);
             this.Controls.Add(this.charTB00);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(991, 283);
             this.MinimumSize = new System.Drawing.Size(991, 283);
             this.Name = "MainForm";
@@ -426,6 +449,8 @@
             this.Text = "Игра слово-в-слово чит";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,6 +488,8 @@
         private System.Windows.Forms.DataGridView wordsGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn key;
         private System.Windows.Forms.DataGridViewTextBoxColumn value;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem addWordsToolStripMenuItem;
     }
 }
 

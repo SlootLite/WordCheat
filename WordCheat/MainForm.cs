@@ -24,6 +24,8 @@ namespace WordCheat
 
         private void buttonGo_Click(object sender, EventArgs e)
         {
+            addWordsToolStripMenuItem.Enabled = false;
+            buttonGo.Enabled = false;
             int count = 0; // количество потоков
             this.clearResult(); // очистим предыдущий результат
             this.clearBackgroundTB(); // очистим фон у текстбоксов
@@ -75,8 +77,19 @@ namespace WordCheat
         /// </summary>
         private void addProgress()
         {
-            if(progressBar.Maximum > progressBar.Value)
+            if (progressBar.Maximum > progressBar.Value)
                 progressBar.Value += 1;
+            else
+                this.completeFinding();
+        }
+
+        /// <summary>
+        /// Сработает когда произойдет завершение поиска
+        /// </summary>
+        private void completeFinding()
+        {
+            addWordsToolStripMenuItem.Enabled = true;
+            buttonGo.Enabled = true;
         }
 
         /// <summary>
@@ -217,6 +230,12 @@ namespace WordCheat
         {
             if(wordsGrid.Rows.Count > e.RowIndex && e.RowIndex >= 0)
                 this.setPathToWord(wordsGrid.Rows[e.RowIndex].Cells["key"].Value.ToString());
+        }
+
+        private void addWordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddWords addWordsForm = new AddWords();
+            addWordsForm.ShowDialog();
         }
     }
 }
