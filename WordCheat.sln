@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCheat", "WordCheat\WordCheat.csproj", "{C9305B1D-E18B-4E81-B9EE-1F5A79E7F577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9305B1D-E18B-4E81-B9EE-1F5A79E7F577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9305B1D-E18B-4E81-B9EE-1F5A79E7F577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9305B1D-E18B-4E81-B9EE-1F5A79E7F577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9305B1D-E18B-4E81-B9EE-1F5A79E7F577}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B14B88D3-C315-4937-9AF8-27DFB85DD6DF}
+	EndGlobalSection
+EndGlobal
