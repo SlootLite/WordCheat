@@ -16,5 +16,17 @@ namespace WordCheat
         {
             InitializeComponent();
         }
+
+        private void buttonGo_Click(object sender, EventArgs e)
+        {
+            char[,] charArray = GetData.init(this);
+
+
+        }
+        public void sendResult(string text)
+        {
+            if (resultTB.Text.Length > 0) resultTB.Text += "\r\n";
+            resultTB.Text += text;
+        }
     }
 }

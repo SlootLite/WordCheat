@@ -28,249 +28,276 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.charTB0 = new System.Windows.Forms.TextBox();
-            this.charTB1 = new System.Windows.Forms.TextBox();
-            this.charTB2 = new System.Windows.Forms.TextBox();
-            this.charTB3 = new System.Windows.Forms.TextBox();
-            this.charTB4 = new System.Windows.Forms.TextBox();
-            this.charTB5 = new System.Windows.Forms.TextBox();
-            this.charTB6 = new System.Windows.Forms.TextBox();
-            this.charTB7 = new System.Windows.Forms.TextBox();
-            this.charTB8 = new System.Windows.Forms.TextBox();
-            this.charTB9 = new System.Windows.Forms.TextBox();
+            this.charTB00 = new System.Windows.Forms.TextBox();
+            this.charTB01 = new System.Windows.Forms.TextBox();
+            this.charTB02 = new System.Windows.Forms.TextBox();
+            this.charTB03 = new System.Windows.Forms.TextBox();
+            this.charTB04 = new System.Windows.Forms.TextBox();
             this.charTB10 = new System.Windows.Forms.TextBox();
             this.charTB11 = new System.Windows.Forms.TextBox();
             this.charTB12 = new System.Windows.Forms.TextBox();
             this.charTB13 = new System.Windows.Forms.TextBox();
             this.charTB14 = new System.Windows.Forms.TextBox();
-            this.charTB15 = new System.Windows.Forms.TextBox();
-            this.charTB16 = new System.Windows.Forms.TextBox();
-            this.charTB17 = new System.Windows.Forms.TextBox();
-            this.charTB18 = new System.Windows.Forms.TextBox();
-            this.charTB19 = new System.Windows.Forms.TextBox();
             this.charTB20 = new System.Windows.Forms.TextBox();
             this.charTB21 = new System.Windows.Forms.TextBox();
             this.charTB22 = new System.Windows.Forms.TextBox();
             this.charTB23 = new System.Windows.Forms.TextBox();
             this.charTB24 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.charTB30 = new System.Windows.Forms.TextBox();
+            this.charTB31 = new System.Windows.Forms.TextBox();
+            this.charTB32 = new System.Windows.Forms.TextBox();
+            this.charTB33 = new System.Windows.Forms.TextBox();
+            this.charTB34 = new System.Windows.Forms.TextBox();
+            this.charTB40 = new System.Windows.Forms.TextBox();
+            this.charTB41 = new System.Windows.Forms.TextBox();
+            this.charTB42 = new System.Windows.Forms.TextBox();
+            this.charTB43 = new System.Windows.Forms.TextBox();
+            this.charTB44 = new System.Windows.Forms.TextBox();
+            this.buttonGo = new System.Windows.Forms.Button();
             this.resultTB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // charTB0
+            // charTB00
             // 
-            this.charTB0.Location = new System.Drawing.Point(19, 19);
-            this.charTB0.Name = "charTB0";
-            this.charTB0.Size = new System.Drawing.Size(40, 20);
-            this.charTB0.TabIndex = 0;
-            this.charTB0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.charTB00.Location = new System.Drawing.Point(19, 19);
+            this.charTB00.Name = "charTB00";
+            this.charTB00.Size = new System.Drawing.Size(40, 20);
+            this.charTB00.TabIndex = 0;
+            this.charTB00.Text = "А";
+            this.charTB00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // charTB1
+            // charTB01
             // 
-            this.charTB1.Location = new System.Drawing.Point(65, 19);
-            this.charTB1.Name = "charTB1";
-            this.charTB1.Size = new System.Drawing.Size(40, 20);
-            this.charTB1.TabIndex = 1;
-            this.charTB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.charTB01.Location = new System.Drawing.Point(65, 19);
+            this.charTB01.Name = "charTB01";
+            this.charTB01.Size = new System.Drawing.Size(40, 20);
+            this.charTB01.TabIndex = 1;
+            this.charTB01.Text = "Е";
+            this.charTB01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // charTB2
+            // charTB02
             // 
-            this.charTB2.Location = new System.Drawing.Point(111, 19);
-            this.charTB2.Name = "charTB2";
-            this.charTB2.Size = new System.Drawing.Size(40, 20);
-            this.charTB2.TabIndex = 2;
-            this.charTB2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.charTB02.Location = new System.Drawing.Point(111, 19);
+            this.charTB02.Name = "charTB02";
+            this.charTB02.Size = new System.Drawing.Size(40, 20);
+            this.charTB02.TabIndex = 2;
+            this.charTB02.Text = "С";
+            this.charTB02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // charTB3
+            // charTB03
             // 
-            this.charTB3.Location = new System.Drawing.Point(157, 19);
-            this.charTB3.Name = "charTB3";
-            this.charTB3.Size = new System.Drawing.Size(40, 20);
-            this.charTB3.TabIndex = 3;
-            this.charTB3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.charTB03.Location = new System.Drawing.Point(157, 19);
+            this.charTB03.Name = "charTB03";
+            this.charTB03.Size = new System.Drawing.Size(40, 20);
+            this.charTB03.TabIndex = 3;
+            this.charTB03.Text = "Ь";
+            this.charTB03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // charTB4
+            // charTB04
             // 
-            this.charTB4.Location = new System.Drawing.Point(203, 19);
-            this.charTB4.Name = "charTB4";
-            this.charTB4.Size = new System.Drawing.Size(40, 20);
-            this.charTB4.TabIndex = 4;
-            this.charTB4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB5
-            // 
-            this.charTB5.Location = new System.Drawing.Point(19, 45);
-            this.charTB5.Name = "charTB5";
-            this.charTB5.Size = new System.Drawing.Size(40, 20);
-            this.charTB5.TabIndex = 5;
-            this.charTB5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB6
-            // 
-            this.charTB6.Location = new System.Drawing.Point(65, 45);
-            this.charTB6.Name = "charTB6";
-            this.charTB6.Size = new System.Drawing.Size(40, 20);
-            this.charTB6.TabIndex = 6;
-            this.charTB6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB7
-            // 
-            this.charTB7.Location = new System.Drawing.Point(111, 45);
-            this.charTB7.Name = "charTB7";
-            this.charTB7.Size = new System.Drawing.Size(40, 20);
-            this.charTB7.TabIndex = 7;
-            this.charTB7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB8
-            // 
-            this.charTB8.Location = new System.Drawing.Point(157, 45);
-            this.charTB8.Name = "charTB8";
-            this.charTB8.Size = new System.Drawing.Size(40, 20);
-            this.charTB8.TabIndex = 8;
-            this.charTB8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB9
-            // 
-            this.charTB9.Location = new System.Drawing.Point(203, 45);
-            this.charTB9.Name = "charTB9";
-            this.charTB9.Size = new System.Drawing.Size(40, 20);
-            this.charTB9.TabIndex = 9;
-            this.charTB9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.charTB04.Location = new System.Drawing.Point(203, 19);
+            this.charTB04.Name = "charTB04";
+            this.charTB04.Size = new System.Drawing.Size(40, 20);
+            this.charTB04.TabIndex = 4;
+            this.charTB04.Text = "К";
+            this.charTB04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB10
             // 
-            this.charTB10.Location = new System.Drawing.Point(19, 71);
+            this.charTB10.Location = new System.Drawing.Point(19, 45);
             this.charTB10.Name = "charTB10";
             this.charTB10.Size = new System.Drawing.Size(40, 20);
-            this.charTB10.TabIndex = 10;
+            this.charTB10.TabIndex = 5;
+            this.charTB10.Text = "Т";
             this.charTB10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB11
             // 
-            this.charTB11.Location = new System.Drawing.Point(65, 71);
+            this.charTB11.Location = new System.Drawing.Point(65, 45);
             this.charTB11.Name = "charTB11";
             this.charTB11.Size = new System.Drawing.Size(40, 20);
-            this.charTB11.TabIndex = 11;
+            this.charTB11.TabIndex = 6;
+            this.charTB11.Text = "К";
             this.charTB11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB12
             // 
-            this.charTB12.Location = new System.Drawing.Point(111, 71);
+            this.charTB12.Location = new System.Drawing.Point(111, 45);
             this.charTB12.Name = "charTB12";
             this.charTB12.Size = new System.Drawing.Size(40, 20);
-            this.charTB12.TabIndex = 12;
+            this.charTB12.TabIndex = 7;
+            this.charTB12.Text = "О";
             this.charTB12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB13
             // 
-            this.charTB13.Location = new System.Drawing.Point(157, 71);
+            this.charTB13.Location = new System.Drawing.Point(157, 45);
             this.charTB13.Name = "charTB13";
             this.charTB13.Size = new System.Drawing.Size(40, 20);
-            this.charTB13.TabIndex = 13;
+            this.charTB13.TabIndex = 8;
+            this.charTB13.Text = "Б";
             this.charTB13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB14
             // 
-            this.charTB14.Location = new System.Drawing.Point(203, 71);
+            this.charTB14.Location = new System.Drawing.Point(203, 45);
             this.charTB14.Name = "charTB14";
             this.charTB14.Size = new System.Drawing.Size(40, 20);
-            this.charTB14.TabIndex = 14;
+            this.charTB14.TabIndex = 9;
+            this.charTB14.Text = "А";
             this.charTB14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB15
-            // 
-            this.charTB15.Location = new System.Drawing.Point(19, 97);
-            this.charTB15.Name = "charTB15";
-            this.charTB15.Size = new System.Drawing.Size(40, 20);
-            this.charTB15.TabIndex = 15;
-            this.charTB15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB16
-            // 
-            this.charTB16.Location = new System.Drawing.Point(65, 97);
-            this.charTB16.Name = "charTB16";
-            this.charTB16.Size = new System.Drawing.Size(40, 20);
-            this.charTB16.TabIndex = 16;
-            this.charTB16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB17
-            // 
-            this.charTB17.Location = new System.Drawing.Point(111, 97);
-            this.charTB17.Name = "charTB17";
-            this.charTB17.Size = new System.Drawing.Size(40, 20);
-            this.charTB17.TabIndex = 17;
-            this.charTB17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB18
-            // 
-            this.charTB18.Location = new System.Drawing.Point(157, 97);
-            this.charTB18.Name = "charTB18";
-            this.charTB18.Size = new System.Drawing.Size(40, 20);
-            this.charTB18.TabIndex = 18;
-            this.charTB18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // charTB19
-            // 
-            this.charTB19.Location = new System.Drawing.Point(203, 97);
-            this.charTB19.Name = "charTB19";
-            this.charTB19.Size = new System.Drawing.Size(40, 20);
-            this.charTB19.TabIndex = 19;
-            this.charTB19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB20
             // 
-            this.charTB20.Location = new System.Drawing.Point(19, 123);
+            this.charTB20.Location = new System.Drawing.Point(19, 71);
             this.charTB20.Name = "charTB20";
             this.charTB20.Size = new System.Drawing.Size(40, 20);
-            this.charTB20.TabIndex = 20;
+            this.charTB20.TabIndex = 10;
+            this.charTB20.Text = "А";
             this.charTB20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB21
             // 
-            this.charTB21.Location = new System.Drawing.Point(65, 123);
+            this.charTB21.Location = new System.Drawing.Point(65, 71);
             this.charTB21.Name = "charTB21";
             this.charTB21.Size = new System.Drawing.Size(40, 20);
-            this.charTB21.TabIndex = 21;
+            this.charTB21.TabIndex = 11;
+            this.charTB21.Text = "Р";
             this.charTB21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB22
             // 
-            this.charTB22.Location = new System.Drawing.Point(111, 123);
+            this.charTB22.Location = new System.Drawing.Point(111, 71);
             this.charTB22.Name = "charTB22";
             this.charTB22.Size = new System.Drawing.Size(40, 20);
-            this.charTB22.TabIndex = 22;
+            this.charTB22.TabIndex = 12;
+            this.charTB22.Text = "Б";
             this.charTB22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB23
             // 
-            this.charTB23.Location = new System.Drawing.Point(157, 123);
+            this.charTB23.Location = new System.Drawing.Point(157, 71);
             this.charTB23.Name = "charTB23";
             this.charTB23.Size = new System.Drawing.Size(40, 20);
-            this.charTB23.TabIndex = 23;
+            this.charTB23.TabIndex = 13;
+            this.charTB23.Text = "У";
             this.charTB23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // charTB24
             // 
-            this.charTB24.Location = new System.Drawing.Point(203, 123);
+            this.charTB24.Location = new System.Drawing.Point(203, 71);
             this.charTB24.Name = "charTB24";
             this.charTB24.Size = new System.Drawing.Size(40, 20);
-            this.charTB24.TabIndex = 24;
+            this.charTB24.TabIndex = 14;
+            this.charTB24.Text = "З";
             this.charTB24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // charTB30
             // 
-            this.button1.Location = new System.Drawing.Point(19, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "GO";
-            this.button1.UseVisualStyleBackColor = true;
+            this.charTB30.Location = new System.Drawing.Point(19, 97);
+            this.charTB30.Name = "charTB30";
+            this.charTB30.Size = new System.Drawing.Size(40, 20);
+            this.charTB30.TabIndex = 15;
+            this.charTB30.Text = "З";
+            this.charTB30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB31
+            // 
+            this.charTB31.Location = new System.Drawing.Point(65, 97);
+            this.charTB31.Name = "charTB31";
+            this.charTB31.Size = new System.Drawing.Size(40, 20);
+            this.charTB31.TabIndex = 16;
+            this.charTB31.Text = "Т";
+            this.charTB31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB32
+            // 
+            this.charTB32.Location = new System.Drawing.Point(111, 97);
+            this.charTB32.Name = "charTB32";
+            this.charTB32.Size = new System.Drawing.Size(40, 20);
+            this.charTB32.TabIndex = 17;
+            this.charTB32.Text = "А";
+            this.charTB32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB33
+            // 
+            this.charTB33.Location = new System.Drawing.Point(157, 97);
+            this.charTB33.Name = "charTB33";
+            this.charTB33.Size = new System.Drawing.Size(40, 20);
+            this.charTB33.TabIndex = 18;
+            this.charTB33.Text = "К";
+            this.charTB33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB34
+            // 
+            this.charTB34.Location = new System.Drawing.Point(203, 97);
+            this.charTB34.Name = "charTB34";
+            this.charTB34.Size = new System.Drawing.Size(40, 20);
+            this.charTB34.TabIndex = 19;
+            this.charTB34.Text = "А";
+            this.charTB34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB40
+            // 
+            this.charTB40.Location = new System.Drawing.Point(19, 123);
+            this.charTB40.Name = "charTB40";
+            this.charTB40.Size = new System.Drawing.Size(40, 20);
+            this.charTB40.TabIndex = 20;
+            this.charTB40.Text = "Н";
+            this.charTB40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB41
+            // 
+            this.charTB41.Location = new System.Drawing.Point(65, 123);
+            this.charTB41.Name = "charTB41";
+            this.charTB41.Size = new System.Drawing.Size(40, 20);
+            this.charTB41.TabIndex = 21;
+            this.charTB41.Text = "У";
+            this.charTB41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB42
+            // 
+            this.charTB42.Location = new System.Drawing.Point(111, 123);
+            this.charTB42.Name = "charTB42";
+            this.charTB42.Size = new System.Drawing.Size(40, 20);
+            this.charTB42.TabIndex = 22;
+            this.charTB42.Text = "З";
+            this.charTB42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB43
+            // 
+            this.charTB43.Location = new System.Drawing.Point(157, 123);
+            this.charTB43.Name = "charTB43";
+            this.charTB43.Size = new System.Drawing.Size(40, 20);
+            this.charTB43.TabIndex = 23;
+            this.charTB43.Text = "О";
+            this.charTB43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // charTB44
+            // 
+            this.charTB44.Location = new System.Drawing.Point(203, 123);
+            this.charTB44.Name = "charTB44";
+            this.charTB44.Size = new System.Drawing.Size(40, 20);
+            this.charTB44.TabIndex = 24;
+            this.charTB44.Text = "Н";
+            this.charTB44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // buttonGo
+            // 
+            this.buttonGo.Location = new System.Drawing.Point(19, 161);
+            this.buttonGo.Name = "buttonGo";
+            this.buttonGo.Size = new System.Drawing.Size(75, 23);
+            this.buttonGo.TabIndex = 25;
+            this.buttonGo.Text = "GO";
+            this.buttonGo.UseVisualStyleBackColor = true;
+            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click);
             // 
             // resultTB
             // 
             this.resultTB.Location = new System.Drawing.Point(342, 19);
             this.resultTB.Multiline = true;
             this.resultTB.Name = "resultTB";
+            this.resultTB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.resultTB.Size = new System.Drawing.Size(521, 165);
             this.resultTB.TabIndex = 26;
             // 
@@ -280,32 +307,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 213);
             this.Controls.Add(this.resultTB);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonGo);
+            this.Controls.Add(this.charTB44);
+            this.Controls.Add(this.charTB43);
+            this.Controls.Add(this.charTB42);
+            this.Controls.Add(this.charTB41);
+            this.Controls.Add(this.charTB40);
+            this.Controls.Add(this.charTB34);
+            this.Controls.Add(this.charTB33);
+            this.Controls.Add(this.charTB32);
+            this.Controls.Add(this.charTB31);
+            this.Controls.Add(this.charTB30);
             this.Controls.Add(this.charTB24);
             this.Controls.Add(this.charTB23);
             this.Controls.Add(this.charTB22);
             this.Controls.Add(this.charTB21);
             this.Controls.Add(this.charTB20);
-            this.Controls.Add(this.charTB19);
-            this.Controls.Add(this.charTB18);
-            this.Controls.Add(this.charTB17);
-            this.Controls.Add(this.charTB16);
-            this.Controls.Add(this.charTB15);
             this.Controls.Add(this.charTB14);
             this.Controls.Add(this.charTB13);
             this.Controls.Add(this.charTB12);
             this.Controls.Add(this.charTB11);
             this.Controls.Add(this.charTB10);
-            this.Controls.Add(this.charTB9);
-            this.Controls.Add(this.charTB8);
-            this.Controls.Add(this.charTB7);
-            this.Controls.Add(this.charTB6);
-            this.Controls.Add(this.charTB5);
-            this.Controls.Add(this.charTB4);
-            this.Controls.Add(this.charTB3);
-            this.Controls.Add(this.charTB2);
-            this.Controls.Add(this.charTB1);
-            this.Controls.Add(this.charTB0);
+            this.Controls.Add(this.charTB04);
+            this.Controls.Add(this.charTB03);
+            this.Controls.Add(this.charTB02);
+            this.Controls.Add(this.charTB01);
+            this.Controls.Add(this.charTB00);
             this.Name = "MainForm";
             this.Text = "Игра слово-в-слово чит";
             this.ResumeLayout(false);
@@ -315,32 +342,32 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox charTB0;
-        private System.Windows.Forms.TextBox charTB1;
-        private System.Windows.Forms.TextBox charTB2;
-        private System.Windows.Forms.TextBox charTB3;
-        private System.Windows.Forms.TextBox charTB4;
-        private System.Windows.Forms.TextBox charTB5;
-        private System.Windows.Forms.TextBox charTB6;
-        private System.Windows.Forms.TextBox charTB7;
-        private System.Windows.Forms.TextBox charTB8;
-        private System.Windows.Forms.TextBox charTB9;
+        private System.Windows.Forms.TextBox charTB00;
+        private System.Windows.Forms.TextBox charTB01;
+        private System.Windows.Forms.TextBox charTB02;
+        private System.Windows.Forms.TextBox charTB03;
+        private System.Windows.Forms.TextBox charTB04;
         private System.Windows.Forms.TextBox charTB10;
         private System.Windows.Forms.TextBox charTB11;
         private System.Windows.Forms.TextBox charTB12;
         private System.Windows.Forms.TextBox charTB13;
         private System.Windows.Forms.TextBox charTB14;
-        private System.Windows.Forms.TextBox charTB15;
-        private System.Windows.Forms.TextBox charTB16;
-        private System.Windows.Forms.TextBox charTB17;
-        private System.Windows.Forms.TextBox charTB18;
-        private System.Windows.Forms.TextBox charTB19;
         private System.Windows.Forms.TextBox charTB20;
         private System.Windows.Forms.TextBox charTB21;
         private System.Windows.Forms.TextBox charTB22;
         private System.Windows.Forms.TextBox charTB23;
         private System.Windows.Forms.TextBox charTB24;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox charTB30;
+        private System.Windows.Forms.TextBox charTB31;
+        private System.Windows.Forms.TextBox charTB32;
+        private System.Windows.Forms.TextBox charTB33;
+        private System.Windows.Forms.TextBox charTB34;
+        private System.Windows.Forms.TextBox charTB40;
+        private System.Windows.Forms.TextBox charTB41;
+        private System.Windows.Forms.TextBox charTB42;
+        private System.Windows.Forms.TextBox charTB43;
+        private System.Windows.Forms.TextBox charTB44;
+        private System.Windows.Forms.Button buttonGo;
         private System.Windows.Forms.TextBox resultTB;
     }
 }
