@@ -32,7 +32,7 @@ namespace WordCheat
             return dict;
         }
 
-        public List<string> goNext(string word, string indexes, int i, int j, List<string> dict)
+        private List<string> goNext(string word, string indexes, int i, int j, List<string> dict)
         {
             int idx1 = 0, idx2 = 0;
             // вправо
@@ -88,10 +88,10 @@ namespace WordCheat
         {
             string text = (word + charArray[idx1, idx2].ToString()).ToLower();
             string textIndexes = indexes + "," + idx1.ToString() + idx2.ToString();
-            DataTable result = SQLiteDB.Select("SELECT word FROM words WHERE word like '" + text + "%'");
+            DataTable result = SQLiteDB.Select("SELECT word FROM words WHERE word like '" + text.ToLower() + "%'");
             if (result.Rows.Count > 0)
             {
-                DataTable result2 = SQLiteDB.Select("SELECT word FROM words WHERE word = '" + text + "'");
+                DataTable result2 = SQLiteDB.Select("SELECT word FROM words WHERE word = '" + text.ToLower() + "'");
                 if (result2.Rows.Count > 0)
                 {
                     if (result2.Rows[0][0].ToString().Length > 1) dict.Add(result2.Rows[0][0].ToString());
