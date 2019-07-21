@@ -24,15 +24,15 @@ namespace WordCheat
         /// <param name="ca">матрица букв</param>
         /// <param name="idx1">строка</param>
         /// <param name="idx2">столбец</param>
-        public List<string> findWords(char[,] ca, int idx1, int idx2)
+        public Dictionary<string, string> findWords(char[,] ca, int idx1, int idx2)
         {
             charArray = ca;
-            List<string> dict = new List<string>();
+            Dictionary<string, string> dict = new Dictionary<string, string>();
             dict = goNext(charArray[idx1, idx2].ToString(), idx1.ToString() + idx2.ToString(), idx1, idx2, dict);
             return dict;
         }
 
-        private List<string> goNext(string word, string indexes, int i, int j, List<string> dict)
+        private Dictionary<string, string> goNext(string word, string indexes, int i, int j, Dictionary<string, string> dict)
         {
             int idx1 = 0, idx2 = 0;
             // вправо
@@ -84,7 +84,7 @@ namespace WordCheat
                 find(word, indexes, idx1, idx2, dict);
             return dict;
         }
-        private void find(string word, string indexes, int idx1, int idx2, List<string> dict)
+        private void find(string word, string indexes, int idx1, int idx2, Dictionary<string, string> dict)
         {
             string text = (word + charArray[idx1, idx2].ToString()).ToLower();
             string textIndexes = indexes + "," + idx1.ToString() + idx2.ToString();
@@ -94,7 +94,7 @@ namespace WordCheat
                 DataTable result2 = SQLiteDB.Select("SELECT word FROM words WHERE word = '" + text.ToLower() + "'");
                 if (result2.Rows.Count > 0)
                 {
-                    if (result2.Rows[0][0].ToString().Length > 1) dict.Add(result2.Rows[0][0].ToString());
+                    if (result2.Rows[0][0].ToString().Length > 1) dict.Add(textIndexes, result2.Rows[0][0].ToString());
                 }
                 dict = goNext(text, textIndexes, idx1, idx2, dict);
             }

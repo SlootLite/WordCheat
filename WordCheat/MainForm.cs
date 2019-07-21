@@ -22,10 +22,11 @@ namespace WordCheat
         private void buttonGo_Click(object sender, EventArgs e)
         {
             int count = 0; // количество потоков
-            charArray = GetData.init(this);
-            for (int i = 0; i < charArray.GetLength(0); i++)
+            this.clearResult(); // очистим предыдущий результат
+            charArray = GetData.init(this); // заберем данные из полей
+            for (int i = 0; i < charArray.GetLength(0); i++) // цикл по строкам
             {
-                for (int j = 0; j < charArray.GetLength(1); j++)
+                for (int j = 0; j < charArray.GetLength(1); j++) // цикл по столбцам
                 {
                     WordFinderArg wfa = new WordFinderArg()
                     {
@@ -39,17 +40,33 @@ namespace WordCheat
                     count++;
                 }
             }
-            if(count > 0) setProgressMax(count); // укажем размер прогресс бара
+            if(count > 0) this.setProgressMax(count); // укажем размер прогресс бара
         }
-        public void sendResult(string text)
+        /// <summary>
+        /// Очистит результат
+        /// </summary>
+        private void clearResult()
         {
-            wordsGrid.Rows.Add("0", text);
+            wordsGrid.Rows.Clear();
         }
+        /// <summary>
+        /// Добавит новую строку в результат
+        /// </summary>
+        /// <param name="key">Путь который прошел для данного слова</param>
+        /// <param name="text">Слово</param>
+        private void sendResult(string key, string text)
+        {
+            wordsGrid.Rows.Add(key, text);
+        }
+        /// <summary>
+        /// Установит максимальное значение для прогресс бара
+        /// </summary>
+        /// <param name="max"></param>
         private void setProgressMax(int max)
         {
             progressBar.Maximum = max;
         }
-        public void addProgress()
+        private void addProgress()
         {
             progressBar.Value += 1;
         }
@@ -58,18 +75,18 @@ namespace WordCheat
         {
             WordFinderArg wfa = (WordFinderArg)e.Argument;
             WordFinder wf = new WordFinder();
-            List<string> dict = wf.findWords(charArray, wfa.idx1, wfa.idx2);
+            Dictionary<string, string> dict = wf.findWords(charArray, wfa.idx1, wfa.idx2);
             e.Result = dict;
         }
 
         private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            List<string> dict = (List<string>)e.Result;
-            for (int k = 0; k < dict.Count; k++)
+            Dictionary<string, string> dict = (Dictionary<string, string>)e.Result;
+            foreach(var item in dict)
             {
-                this.sendResult(dict[k]);
+                this.sendResult(item.Key, item.Value);
             }
-            addProgress();
+            this.addProgress();
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)

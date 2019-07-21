@@ -107,6 +107,7 @@
             // 
             // charTB04
             // 
+            this.charTB04.BackColor = System.Drawing.SystemColors.Window;
             this.charTB04.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.charTB04.Location = new System.Drawing.Point(203, 19);
             this.charTB04.MaxLength = 1;
