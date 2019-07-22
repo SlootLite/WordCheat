@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.charTB00 = new System.Windows.Forms.TextBox();
             this.charTB01 = new System.Windows.Forms.TextBox();
             this.charTB02 = new System.Windows.Forms.TextBox();
@@ -57,11 +57,11 @@
             this.buttonGo = new System.Windows.Forms.Button();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.wordsGrid = new System.Windows.Forms.DataGridView();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.addWordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.key = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.addWordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.isUseSortCheckbox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -377,23 +377,6 @@
             this.wordsGrid.TabIndex = 28;
             this.wordsGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.wordsGrid_CellClick);
             // 
-            // menuStrip
-            // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addWordsToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(975, 24);
-            this.menuStrip.TabIndex = 29;
-            this.menuStrip.Text = "menuStrip";
-            // 
-            // addWordsToolStripMenuItem
-            // 
-            this.addWordsToolStripMenuItem.Name = "addWordsToolStripMenuItem";
-            this.addWordsToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.addWordsToolStripMenuItem.Text = "Добавить слова";
-            this.addWordsToolStripMenuItem.Click += new System.EventHandler(this.addWordsToolStripMenuItem_Click);
-            // 
             // key
             // 
             this.key.DataPropertyName = "key";
@@ -413,13 +396,30 @@
             // count
             // 
             this.count.DataPropertyName = "count";
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.count.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.count.DefaultCellStyle = dataGridViewCellStyle1;
             this.count.HeaderText = "count";
             this.count.Name = "count";
             this.count.ReadOnly = true;
             this.count.Visible = false;
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addWordsToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(975, 24);
+            this.menuStrip.TabIndex = 29;
+            this.menuStrip.Text = "menuStrip";
+            // 
+            // addWordsToolStripMenuItem
+            // 
+            this.addWordsToolStripMenuItem.Name = "addWordsToolStripMenuItem";
+            this.addWordsToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.addWordsToolStripMenuItem.Text = "Добавить слова";
+            this.addWordsToolStripMenuItem.Click += new System.EventHandler(this.addWordsToolStripMenuItem_Click);
             // 
             // isUseSortCheckbox
             // 
@@ -469,7 +469,8 @@
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(991, 283);
+            this.MaximumSize = new System.Drawing.Size(991, 310);
+            this.MinimumSize = new System.Drawing.Size(991, 310);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игра слово-в-слово чит";
