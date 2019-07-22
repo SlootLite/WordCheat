@@ -78,9 +78,10 @@ namespace WordCheat
         private void addProgress()
         {
             if (progressBar.Maximum > progressBar.Value)
+            {
                 progressBar.Value += 1;
-            else
-                this.completeFinding();
+                if (progressBar.Maximum <= progressBar.Value)  this.completeFinding();
+            }
         }
 
         /// <summary>
