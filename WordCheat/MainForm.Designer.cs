@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.charTB00 = new System.Windows.Forms.TextBox();
             this.charTB01 = new System.Windows.Forms.TextBox();
             this.charTB02 = new System.Windows.Forms.TextBox();
@@ -56,10 +57,12 @@
             this.buttonGo = new System.Windows.Forms.Button();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.wordsGrid = new System.Windows.Forms.DataGridView();
-            this.key = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.addWordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.key = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isUseSortCheckbox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -342,7 +345,7 @@
             // 
             // buttonGo
             // 
-            this.buttonGo.Location = new System.Drawing.Point(19, 210);
+            this.buttonGo.Location = new System.Drawing.Point(19, 231);
             this.buttonGo.Name = "buttonGo";
             this.buttonGo.Size = new System.Drawing.Size(75, 23);
             this.buttonGo.TabIndex = 25;
@@ -352,7 +355,7 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(111, 210);
+            this.progressBar.Location = new System.Drawing.Point(111, 231);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(132, 23);
             this.progressBar.TabIndex = 27;
@@ -364,30 +367,15 @@
             this.wordsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.wordsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.key,
-            this.value});
+            this.value,
+            this.count});
             this.wordsGrid.Location = new System.Drawing.Point(271, 30);
             this.wordsGrid.Name = "wordsGrid";
             this.wordsGrid.ReadOnly = true;
             this.wordsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.wordsGrid.Size = new System.Drawing.Size(681, 203);
+            this.wordsGrid.Size = new System.Drawing.Size(681, 224);
             this.wordsGrid.TabIndex = 28;
             this.wordsGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.wordsGrid_CellClick);
-            // 
-            // key
-            // 
-            this.key.DataPropertyName = "key";
-            this.key.HeaderText = "Путь";
-            this.key.Name = "key";
-            this.key.ReadOnly = true;
-            this.key.Visible = false;
-            // 
-            // value
-            // 
-            this.value.DataPropertyName = "value";
-            this.value.HeaderText = "Слово";
-            this.value.Name = "value";
-            this.value.ReadOnly = true;
-            this.value.Width = 630;
             // 
             // menuStrip
             // 
@@ -406,11 +394,50 @@
             this.addWordsToolStripMenuItem.Text = "Добавить слова";
             this.addWordsToolStripMenuItem.Click += new System.EventHandler(this.addWordsToolStripMenuItem_Click);
             // 
+            // key
+            // 
+            this.key.DataPropertyName = "key";
+            this.key.HeaderText = "Путь";
+            this.key.Name = "key";
+            this.key.ReadOnly = true;
+            this.key.Visible = false;
+            // 
+            // value
+            // 
+            this.value.DataPropertyName = "value";
+            this.value.HeaderText = "Слово";
+            this.value.Name = "value";
+            this.value.ReadOnly = true;
+            this.value.Width = 630;
+            // 
+            // count
+            // 
+            this.count.DataPropertyName = "count";
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.count.DefaultCellStyle = dataGridViewCellStyle2;
+            this.count.HeaderText = "count";
+            this.count.Name = "count";
+            this.count.ReadOnly = true;
+            this.count.Visible = false;
+            // 
+            // isUseSortCheckbox
+            // 
+            this.isUseSortCheckbox.AutoSize = true;
+            this.isUseSortCheckbox.Location = new System.Drawing.Point(19, 204);
+            this.isUseSortCheckbox.Name = "isUseSortCheckbox";
+            this.isUseSortCheckbox.Size = new System.Drawing.Size(243, 17);
+            this.isUseSortCheckbox.TabIndex = 30;
+            this.isUseSortCheckbox.Text = "Сортировка от больших слов к маленьким";
+            this.isUseSortCheckbox.UseVisualStyleBackColor = true;
+            this.isUseSortCheckbox.CheckedChanged += new System.EventHandler(this.isUseSortCheckbox_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 244);
+            this.ClientSize = new System.Drawing.Size(975, 271);
+            this.Controls.Add(this.isUseSortCheckbox);
             this.Controls.Add(this.wordsGrid);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.buttonGo);
@@ -442,7 +469,6 @@
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(991, 283);
             this.MinimumSize = new System.Drawing.Size(991, 283);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -486,10 +512,12 @@
         private System.Windows.Forms.Button buttonGo;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.DataGridView wordsGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn key;
-        private System.Windows.Forms.DataGridViewTextBoxColumn value;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem addWordsToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn key;
+        private System.Windows.Forms.DataGridViewTextBoxColumn value;
+        private System.Windows.Forms.DataGridViewTextBoxColumn count;
+        private System.Windows.Forms.CheckBox isUseSortCheckbox;
     }
 }
 

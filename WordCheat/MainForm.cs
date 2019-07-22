@@ -29,6 +29,7 @@ namespace WordCheat
             int count = 0; // количество потоков
             this.clearResult(); // очистим предыдущий результат
             this.clearBackgroundTB(); // очистим фон у текстбоксов
+            this.resetProgress(); // сбросим прогресс
             charArray = GetData.init(this); // заберем данные из полей
             for (int i = 0; i < charArray.GetLength(0); i++) // цикл по строкам
             {
@@ -62,7 +63,9 @@ namespace WordCheat
         /// <param name="text">Слово</param>
         private void sendResult(string key, string text)
         {
-            wordsGrid.Rows.Add(key, text);
+            wordsGrid.Rows.Add(key, text, text.Length);
+            if(isUseSortCheckbox.Checked)
+                wordsGrid.Sort(this.wordsGrid.Columns["count"], ListSortDirection.Descending);
         }
         /// <summary>
         /// Установит максимальное значение для прогресс бара
@@ -82,6 +85,14 @@ namespace WordCheat
                 progressBar.Value += 1;
                 if (progressBar.Maximum <= progressBar.Value)  this.completeFinding();
             }
+        }
+
+        /// <summary>
+        /// Сбросит прогресс
+        /// </summary>
+        private void resetProgress()
+        {
+            progressBar.Value = 0;
         }
 
         /// <summary>
@@ -237,6 +248,12 @@ namespace WordCheat
         {
             AddWords addWordsForm = new AddWords();
             addWordsForm.ShowDialog();
+        }
+
+        private void isUseSortCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (isUseSortCheckbox.Checked)
+                wordsGrid.Sort(this.wordsGrid.Columns["count"], ListSortDirection.Descending);
         }
     }
 }
